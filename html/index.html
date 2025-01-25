@@ -1,0 +1,111 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <script src="nui://game/ui/jquery.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <script src="./assets/js/script.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+
+    <title>xC_StatusHUD</title>
+</head>
+
+<body>
+    <div id="main">
+
+        <div class="header">
+
+            <p id="header__svname">xCoore</p>
+            <span id="header__clock">00:00</span>  
+            <div class="reverse">
+                <div class="player-profile-image"><img src="assets/imgs/logo.png" alt=""></div>
+                <div class="logo-side">
+                    <span id="header__id" style="color:rgb(255, 255, 255) ;font-size: 0.8vw;argin-top: 0.15vw;">0</span>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="middleside">
+            <img src="assets/imgs/logo.png" id="profile_img">
+            <div class="selfinfo">
+                <span id="player_name" style="color:rgb(255, 255, 255) ;">xCoore</span>
+                <a id="player_cash">
+                    <!-- <img src="./assets/imgs/money.svg"> -->
+                    <span id="cash">$180,000</span>
+                </a>
+            </div>
+            <div class="ping">
+                <img src="./assets/imgs/wi-fi.svg">
+                <span id="ping">20</span>
+            </div>
+        </div>
+
+
+
+        <div class="progressinfo">
+
+            <div class="right-status1">
+                <div class="health" id="health"><i class="fa fa-heart" style="margin-left: 5.7vw; position: absolute; margin-top: 0.2vw; font-size: 0.8vw;z-index:3;"></i></div>
+            </div>
+
+            <div id="health-bc"></div>
+
+            <div class="left-statuss1">
+                <div class="armor" id="armor"><i class="fa fa-shield-alt" style="margin-left: 5.7vw; position: absolute; margin-top: 0.2vw; font-size: 0.8vw;z-index:3;"></i>
+                </div>
+            </div>
+
+            <div id="armor-bc"></div>
+
+            <div class="right-status2">
+                <div class="hunger" id="hunger"><i class="fa fa-utensils" style="font-size: 0.8vw;position: absolute;  margin-top: 0.2vw; left: 2.6vw;z-index:3;"></i>
+                </div>
+            </div>
+            <div id="hunger-bc"></div>
+
+            <div class="left-statuss2">
+                <div class="thirst" id="thirst"><i class="fa fa-tint" style="margin-left: 2.6vw; margin-top: 0.2vw; font-size: 0.8vw; z-index:3;"></i></div>
+            </div>
+
+        </div>
+
+        <div class="jobgangbox">
+            <div class="jginfo" id="job">
+
+                <div class="info__name">
+                    <span id="jobname">nojob</span>
+                </div>
+                <img src="./assets/imgs/jobs/nojob.png">
+                <div class="info__name">
+                    <span id="jobgrade">nojob</span>
+                </div>
+            </div>
+            <div class="jginfo" id="gang">
+
+                <div class="info__name">
+                    <span id="gangname">Mafia</span>
+                </div>
+                <img src="./assets/imgs/gangs/gang.png">
+                <div class="info__name">
+                    <span id="ganggrade">Mafia</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="clock_main">
+        <p class="cl-p">Time:
+        </p>
+        <span id="header__clock">00:00</span>
+    </div>
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
